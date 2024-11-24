@@ -1,0 +1,339 @@
+/* *  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 97vh;
+  font-size: 15px;;
+  font-family: 'Overpass', sans-serif;
+}
+
+.container {
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  width: 380px;
+  height: 380px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.star {
+  border-radius: 50%;
+  background-color: hsl(206, 10%, 13%);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  padding-top: 30px;
+}
+
+.card > h1 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 10px;
+}
+
+.card > p {
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 20px;
+}
+
+.rating-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.rating-number > .number {
+  background-color: hsl(206, 10%, 13%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button > button {
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  width: 100%;
+  height: 50px;
+  letter-spacing: 3px;
+  border: none; 
+  cursor: pointer;
+}
+
+.number:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.number:active {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.number.active {
+  background-color: hsl(25, 97%, 53%) !important; 
+  color: white;
+}
+
+
+.button > button:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container2 {
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  width: 380px;
+  height: 350px;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  color: hsl(25, 97%, 53%);
+}
+
+.rating > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(206, 10%, 13%);
+  height: 30px;
+  width: 180px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card2 > h1 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 5px;
+}
+
+.card2 > div {
+  color: hsl(217, 12%, 63%);
+  display: flex;
+  text-align: center;
+}
+
+ */
+
+
+
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 14px;
+  font-family: 'Overpass', sans-serif;
+}
+
+/* Mobile design (375px) */
+.container, .container2 {
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  width: 327px;
+  height: auto;
+  min-height: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+.star {
+  border-radius: 50%;
+  background-color: hsl(206, 10%, 13%);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding-top: 25px;
+}
+
+.card > h1 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.card > p {
+  color: hsl(217, 12%, 63%);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.rating-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.rating-number > .number {
+  background-color: hsl(206, 10%, 13%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(217, 12%, 63%);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button > button {
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  width: 100%;
+  height: 45px;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.number:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.number.active {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.button > button:hover {
+  background-color: white;
+  color: hsl(25, 97%, 53%);
+}
+
+.container2 {
+  display: none;
+  text-align: center;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  color: hsl(25, 97%, 53%);
+}
+
+.rating > div {
+  background-color: hsl(206, 10%, 13%);
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin: 20px 0;
+}
+
+.card2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.card2 > h1 {
+  color: white;
+}
+
+.card2 > div {
+  color: hsl(217, 12%, 63%);
+  line-height: 1.5;
+}
+
+/* Desktop styles (1440px and above) */
+@media screen and (min-width: 1440px) {
+  body {
+      font-size: 15px;
+  }
+
+  .container, .container2 {
+      width: 380px;
+      height: 380px;
+      padding: 25px;
+  }
+
+  .star {
+      width: 40px;
+      height: 40px;
+  }
+
+  .rating-number > .number {
+      width: 50px;
+      height: 50px;
+  }
+
+  .button > button {
+      height: 50px;
+  }
+
+  .card > h1 {
+      font-size: 1.75rem;
+  }
+}
